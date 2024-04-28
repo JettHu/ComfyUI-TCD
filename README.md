@@ -2,6 +2,12 @@
 
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) implementation for [TCD](https://github.com/jabir-zheng/TCD).
 
+If my work helps you, you can give my project a small start. 
+
+Some of my other projects that may help you.
+- [ComfyUI-TCD](https://github.com/JettHu/ComfyUI-TCD)
+- [ComfyUI_TGate](https://github.com/JettHu/ComfyUI_TGate)
+- [ComfyUI-ELLA](https://github.com/TencentQQGYLab/ComfyUI-ELLA)
 
 ## :star2: Changelog
 - **[2024.4.28]** :rocket: official [PR](https://github.com/comfyanonymous/ComfyUI/pull/3370) WIP.
