@@ -2,7 +2,7 @@
 
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) implementation for [TCD](https://github.com/jabir-zheng/TCD).
 
-If my work helps you, you can give my project a small start. 
+If my work helps you, consider giving it a star. 
 
 Some of my other projects that may help you.
 - [ComfyUI-TCD](https://github.com/JettHu/ComfyUI-TCD)
