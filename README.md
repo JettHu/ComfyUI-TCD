@@ -2,6 +2,13 @@
 
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) implementation for [TCD](https://github.com/jabir-zheng/TCD).
 
+
+## :star2: Changelog
+- **[2024.4.28]** :rocket: official [PR](https://github.com/comfyanonymous/ComfyUI/pull/3370) WIP.
+- **[2024.4.28]** Initial repo.
+
+https://github.com/comfyanonymous/ComfyUI/pull/3370
+
 ## Example workflows
 
 The [examples directory](./examples/) has workflow example. There are images generated with TCD and LCM in the [assets](./assets/) folder.
