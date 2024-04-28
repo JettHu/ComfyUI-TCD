@@ -1,4 +1,4 @@
-# ComfyUI_TCD
+# ComfyUI-TCD
 
 [ComfyUI](https://github.com/comfyanonymous/ComfyUI) implementation for [TCD](https://github.com/jabir-zheng/TCD).
 
