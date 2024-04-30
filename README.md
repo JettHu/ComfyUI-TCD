@@ -13,8 +13,6 @@ Some of my other projects that may help you.
 - **[2024.4.28]** :rocket: official [PR](https://github.com/comfyanonymous/ComfyUI/pull/3370) WIP.
 - **[2024.4.28]** Initial repo.
 
-https://github.com/comfyanonymous/ComfyUI/pull/3370
-
 ## Example workflows
 
 The [examples directory](./examples/) has workflow example. There are images generated with TCD and LCM in the [assets](./assets/) folder.
@@ -30,6 +28,18 @@ TCD maintains superior generative quality at high NFEs (steps).
 | ---: | :---: | :---: |
 | low NFEs | ![](./assets/tcd_step4.png) | ![](./assets/lcm_ste4.png) |
 | high NFEs | ![](./assets/tcd_step30.png) | ![](./assets/lcm_step30.png) |
+
+## LoRAs
+
+Some LoRAs available on TCD.
+
+[TCD LoRAs](https://mhh0318.github.io/tcd/) from TCD Team.
+- [TCD-SD15-LoRA.safetensors](https://huggingface.co/h1t/TCD-SD15-LoRA/blob/main/pytorch_lora_weights.safetensors)
+- [TCD-SDXL-LoRA.safetensors](https://huggingface.co/h1t/TCD-SDXL-LoRA/blob/main/pytorch_lora_weights.safetensors)
+
+[Hyper-SD 1-Step Unified LoRAs](https://hyper-sd.github.io/) from ByteDance Team.
+- [Hyper-SD15-1step-lora.safetensors](https://huggingface.co/ByteDance/Hyper-SD/blob/main/Hyper-SD15-1step-lora.safetensors)
+- [Hyper-SDXL-1step-lora.safetensors](https://huggingface.co/ByteDance/Hyper-SD/blob/main/Hyper-SDXL-1step-lora.safetensors)
 
 ## INSTALL
 ```bash
