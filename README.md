@@ -1,8 +1,19 @@
 # ComfyUI-TCD
 
-[ComfyUI](https://github.com/comfyanonymous/ComfyUI) implementation for [TCD](https://github.com/jabir-zheng/TCD).
+<p align="center">
+<a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
 
-If my work helps you, consider giving it a star. 
+> If my work helps you, consider giving it a star. 
+
+This repository is the [ComfyUI](https://github.com/comfyanonymous/ComfyUI) custom node implementation of TCD Sampler mentioned in the [TCD paper](https://github.com/jabir-zheng/TCD).
+
+TCD, inspired by Consistency Models, is a novel distillation technology that enables the distillation of knowledge from pre-trained diffusion models into a few-step sampler. It is well known LCM has some problems in generating clear and detailed images. TCD significantly improves image quality than LCM, also with fewer steps. And TCD allows for adjusting the level of random noise in the samples, producing results with varying degrees of detail.
+
+That is:
+- TCD generates better details than LCM in same denoise steps.
+- TCD can control the richness of details through parameters.
+- In addition, TCD will also produce better results than LCM when steps are large.
 
 Some of my other projects that may help you.
 - [ComfyUI-TCD](https://github.com/JettHu/ComfyUI-TCD)
@@ -29,6 +40,8 @@ TCD maintains superior generative quality at high NFEs (steps).
 | low NFEs | ![](./assets/tcd_step4.png) | ![](./assets/lcm_ste4.png) |
 | high NFEs | ![](./assets/tcd_step30.png) | ![](./assets/lcm_step30.png) |
 
+The above comparison results show that TCD can produce better results than LCM details, no longer so blurry and bland.
+
 ## LoRAs
 
 Some LoRAs available on TCD.
@@ -44,6 +57,8 @@ Some LoRAs available on TCD.
 ## INSTALL
 ```bash
 git clone https://github.com/JettHu/ComfyUI-TCD
+
+# Or use ComfyUI-Manager
 ```
 
 ## Nodes reference
@@ -58,4 +73,4 @@ git clone https://github.com/JettHu/ComfyUI-TCD
 - **scheduler**: The type of schedule to use (same as KSampler node).
   - I only kept `simple` and `sgm_uniform`. `simple` behaves the same as diffusers. And `sgm_uniform` is another scheduler recommended by comfyui author using lcm.
 - **denoise**: How much information of the latents should be erased by noise (same as KSampler node).
-- **eta**: A stochastic parameter (referred to as `gamma` in the paper) used to control the stochasticity in every step. When eta = 0, it represents deterministic sampling, whereas eta = 1 indicates full stochastic sampling. 
+- **eta**: A stochastic parameter (referred to as `gamma` in the paper) used to control the stochasticity (detail-richness of the results) in every step. When eta = 0, it represents deterministic sampling, whereas eta = 1 indicates full stochastic sampling. It is recommended to fine-tune this parameter when adjusting steps larger and using different LoRAs. The default is 0.3.
