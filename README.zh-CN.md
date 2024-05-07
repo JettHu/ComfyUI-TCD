@@ -45,6 +45,14 @@ TCD 是一个受一致性模型启发（Consistency Models/Latent Consistency Mo
 
 上面的对比结果可以看出，不管在 steps 较少时还是在 steps 较大时，TCD 都能生成比 LCM 细节更好的结果，不再那么糊和平淡了。
 
+
+> [!NOTE]  
+> 除了 `cfg`, `step`, `sampler`, 其他参数保持一致。
+
+| ddim 30 step | dpmpp_2m 30 step | TCD 4 step | LCM 4 step |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/ori_ddim_step30.png" width="150"/> | <img src="./assets/ori_dpmpp_2m_step30.png" width="150"/> | <img src="./assets/tcd_step4.png" width="150"/> | <img src="./assets/lcm_ste4.png" width="150"/> |
+
 ## LoRAs
 
 一些可以用 TCD Sampler 的 LoRA：

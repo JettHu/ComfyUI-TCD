@@ -40,6 +40,13 @@ TCD maintains superior generative quality at high NFEs (steps).
 | low NFEs | ![](./assets/tcd_step4.png) | ![](./assets/lcm_ste4.png) |
 | high NFEs | ![](./assets/tcd_step30.png) | ![](./assets/lcm_step30.png) |
 
+> [!NOTE]  
+> Except for `cfg`, `step`, and `sampler`, other parameters remain the same.
+
+| ddim 30 step | dpmpp_2m 30 step | TCD 4 step | LCM 4 step |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/ori_ddim_step30.png" width="150"/> | <img src="./assets/ori_dpmpp_2m_step30.png" width="150"/> | <img src="./assets/tcd_step4.png" width="150"/> | <img src="./assets/lcm_ste4.png" width="150"/> |
+
 The above comparison results show that TCD can produce better results than LCM details, no longer so blurry and bland.
 
 ## LoRAs
