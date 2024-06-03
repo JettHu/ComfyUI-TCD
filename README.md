@@ -29,6 +29,8 @@ Some of my other projects that may help you.
 
 The [examples directory](./examples/) has workflow example. There are images generated with TCD and LCM in the [assets](./assets/) folder.
 
+![tcd](./examples/tcd_example_workflow.png)
+
 ![tcd_with_low_NFEs](./examples/tcd_with_low_NFEs.png)
 
 TCD maintains superior generative quality at high NFEs (steps).
