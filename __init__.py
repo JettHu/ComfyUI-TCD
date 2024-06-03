@@ -98,9 +98,12 @@ def sample_tcd(
         x = denoised
         if eta > 0 and sigmas[i + 1] > 0:
             noise = noise_sampler(sigmas[i], sigmas[i + 1])
-            x = x / alpha_prod_s[i+1].sqrt() + noise * (sigmas[i+1]**2 + 1 - 1/alpha_prod_s[i+1]).sqrt()
+            x = x / alpha_prod_s[i + 1].sqrt() + noise * (sigmas[i + 1] ** 2 + 1 - 1 / alpha_prod_s[i + 1]).sqrt()
+        else:
+            x = x * (sigmas[i + 1] ** 2 + 1).sqrt()
 
     return x
+
 
 NODE_CLASS_MAPPINGS = {
     "TCDModelSamplingDiscrete": TCDModelSamplingDiscrete,

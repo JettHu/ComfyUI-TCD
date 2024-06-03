@@ -21,6 +21,7 @@ Some of my other projects that may help you.
 - [ComfyUI-ELLA](https://github.com/TencentQQGYLab/ComfyUI-ELLA)
 
 ## :star2: Changelog
+- **[2024.6.03]** :wrench: sampling correctly when gamma is 0.
 - **[2024.4.28]** :rocket: official [PR](https://github.com/comfyanonymous/ComfyUI/pull/3370) WIP.
 - **[2024.4.28]** Initial repo.
 
