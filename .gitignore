@@ -353,3 +353,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/pycharm+all,visualstudiocode,macos,windows,linux,python
 /test
 /models
+node.zip
