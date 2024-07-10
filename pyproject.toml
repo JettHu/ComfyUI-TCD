@@ -1,7 +1,22 @@
+[project]
+name = "comfyui-tcd"
+description = "TCD sampler plugin for ComfyUI"
+version = "0.1.0"
+license = "GPL-3.0"
+
+[project.urls]
+Repository = "https://github.com/JettHu/ComfyUI-TCD"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "jetthu"
+DisplayName = "ComfyUI-TCD"
+Icon = ""
+
 [tool.poetry]
 name = "comfyui-tcd"
 version = "0.1.0"
-description = "TCD plugin for ComfyUI"
+description = "TCD sampler plugin for ComfyUI"
 authors = ["jetthu <jett.hux@gmail.com>"]
 license = "GPL-3.0-only"
 readme = "README.md"
